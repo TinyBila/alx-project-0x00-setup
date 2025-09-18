@@ -1,16 +1,23 @@
 import React from "react"
 import Card from "@/components/Card"
+import Button from "@/components/Button"
 
 const Landing: React.FC = () => {
   return (
-    <main className="flex flex-col h-screen justify-center items-center text-4xl font-semibold">
-      <h1>Welcome to the Landing Page</h1>
-      
-      {/* Render Card component */}
+    <div className="p-6">
+      <h1 className="text-xl font-extralight">Landing Page</h1>
+
+      {/* Cards */}
       <Card />
       <Card />
-      <Card />
-    </main>
+
+      {/* Buttons */}
+      <div className="mt-6 flex gap-4 flex-wrap">
+        <Button title="Small" className="text-sm px-2 py-1 rounded-sm" />
+        <Button title="Medium" className="text-base px-4 py-2 rounded-md" />
+        <Button title="Large" className="text-lg px-6 py-3 rounded-full" />
+      </div>
+    </div>
   )
 }
 
