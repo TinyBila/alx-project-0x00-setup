@@ -7,6 +7,7 @@ const Button: React.FC<ButtonProps> = ({ title, className }) => {
       className={`px-4 py-2 font-medium bg-blue-500 text-white hover:bg-blue-600 transition ${className}`}
     >
       {title}
+      size="small" shape="rounded-md"
     </button>
   )
 }
